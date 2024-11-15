@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:3000
+
+###
+GET {{baseUrl}}/employees
+
+###
+POST {{baseUrl}}/employees
+Content-Type: application/json
+
+{
+  "name": "New Employee"
+}
+
+###
+GET {{baseUrl}}/employees/1
+
+###
+PUT {{baseUrl}}/employees/1
+Content-Type: application/json
+
+{
+  "name": "Bart"
+}
+
+###
+DELETE {{baseUrl}}/employees/21
